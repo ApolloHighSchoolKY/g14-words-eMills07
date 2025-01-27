@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Word
 {
 	private String word;
-	private static String vowels = "AEIOUaeiou";   //static means only one
+	private static final String VOWELS = "AEIOUaeiou";   //static means only one
 
 
 	public Word()
