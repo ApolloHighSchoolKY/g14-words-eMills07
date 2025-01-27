@@ -36,7 +36,7 @@ public class Words
 
 			//if the length of the "theWord" is the same as the parameter "size"
 
-		return count;
+		return count;  //test
 	}
 
 	//this method will remove all words with a specified size / length
