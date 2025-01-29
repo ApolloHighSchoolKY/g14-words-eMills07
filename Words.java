@@ -13,18 +13,18 @@ public class Words
 
 	public Words(String s)
 	{
-		setWord(s);
+		setWords(s);
 	}
 
 	public void setWords(String s)
 	{
 		//Create a Scanner for the list of words in the string "s"
-			Scanner chopper = new Scanner();
+			Scanner chopper = new Scanner(s);
 
 		//Continue to loop while there are more words to read
-		while(wordList.hasNext())
+		while(chopper.hasNext())
 		{
-			wordList.add();
+			wordList.add(new Word(chopper.next()));
 		}
 			//Add objects of the type Word to our ArrayList "wordList"
 
@@ -36,9 +36,9 @@ public class Words
 		int count=0;
 
 		//for every Word in the ArrayList "wordList"
-		for(String word: wordList)
+		for(Word word: wordList)
 			{
-				if(word.length() == size)
+				if(word.getLength() == size)
 				count++;
 			}
 
@@ -52,10 +52,9 @@ public class Words
 	public int removeWordsWithXChars(int size)
 	{
 		int vowelCount = 0;
-
 		//for each Word in the ArrayList "words" loop
-		for(String word: words)
-			if(word.contains(size))
+		for(Word word: words)
+			if()
 			{
 				vowelCount++;
 			}

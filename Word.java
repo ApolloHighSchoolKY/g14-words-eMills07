@@ -9,22 +9,30 @@ public class Word
 
 	public Word()
 	{
-
+		word = "";
 	}
 
 	public Word(String newWord)
 	{
-
+		word = newWord;
 	}
 
 	public void setWord(String newWord)
 	{
-
+		word = newWord;
 	}
 
 	public int getNumVowels()
 	{
+		int count = 0;
 
+		for(int i = 0; i < word.length(); i++)
+		{
+			if(VOWELS.indexOf(word.substring(i,i+1)) > -1)
+			{
+				count++;
+			}
+		}
 
 		//Loop for every letter in "word"
 
@@ -36,7 +44,7 @@ public class Word
 
 	public int getLength()
 	{
-
+		return word.length();
 	}
 
 	public String toString()
